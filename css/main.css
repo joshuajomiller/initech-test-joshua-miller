@@ -42,12 +42,13 @@ html, body{
     color: #ff0000;
 }
 .login_error_wrapper{
-    min-height: 20px;
+    min-height: 40px;
 }
 .login_error_message{
     color: #ff0000;
     font-size: 1.4rem;
-    visibility: hidden;
+    text-align: center;
+    margin: 10px;
 }
 .login_button, .logout_button{
     background: #1d669e;
