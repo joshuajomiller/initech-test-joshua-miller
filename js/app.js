@@ -19,6 +19,7 @@ app.controller('loginCtrl', function($scope, $rootScope, $http, authorization){
                 function successCallback(response) {
                     $scope.authorization.authorized = true;
                     $scope.authorization.auth_token = response.data.token;
+                    $scope.showError = false;
                     $rootScope.$emit('login');
                 }, function errorCallback(response) {
                     $scope.showError = true;
