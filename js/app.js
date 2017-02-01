@@ -4,9 +4,6 @@ app.controller('loginCtrl', function($scope, $rootScope, $http, authorization){
 
     $scope.authorization = authorization;
 
-    $scope.username = "initech";
-    $scope.password = "aw3som3!";
-
     $scope.doLogin = function () {
         if ($scope.username && $scope.password){
             var user = JSON.stringify({"username": $scope.username, "password" : $scope.password});
