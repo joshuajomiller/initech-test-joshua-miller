@@ -49,9 +49,6 @@ html, body{
     font-size: 1.4rem;
     visibility: hidden;
 }
-.login_error_message.show_message{
-    visibility: visible;
-}
 .login_button, .logout_button{
     background: #1d669e;
     color: #fff;
