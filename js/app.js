@@ -3,6 +3,7 @@ var app = angular.module('initechTest', []);
 app.controller('loginCtrl', function($scope, $rootScope, $http, authorization){
 
     $scope.authorization = authorization;
+    $scope.showError = false;
 
     $scope.doLogin = function () {
         if ($scope.username && $scope.password){
@@ -20,6 +21,7 @@ app.controller('loginCtrl', function($scope, $rootScope, $http, authorization){
                     $scope.authorization.auth_token = response.data.token;
                     $rootScope.$emit('login');
                 }, function errorCallback(response) {
+                    $scope.showError = true;
                 }
             );
         }

@@ -30,7 +30,7 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-10 col-sm-push-1">
                                     <div class="login_error_wrapper">
-                                        <div class="login_error_message"></div>
+                                        <div class="login_error_message" ng-show="showError">Your login details are incorrect. Please try again.</div>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-10 col-sm-push-1">
